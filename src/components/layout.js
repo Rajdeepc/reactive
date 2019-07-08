@@ -27,6 +27,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <div style={{
+        maxWidth:'768px',
+        margin:'0 auto'
+      }}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Menu/>
       <div
@@ -43,6 +47,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+      </div>
       </div>
     </>
   )
