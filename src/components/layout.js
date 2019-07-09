@@ -43,9 +43,17 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <ul style={{margin:0,padding:0}}>
+          <li style={{display:'inline-block',marginLeft: '10px'}}>
+          <a href='https://twitter.com/rajrock38' target='_blank'>twitter</a>
+            </li>
+            <li style={{display:'inline-block',marginLeft: '10px'}}>
+            <a href='http://github.com/Rajdeepc' target='_blank'>github</a>
+            </li>
+            <li style={{display:'inline-block',marginLeft: '10px'}}>
+            <a href='https://www.linkedin.com/in/rajdeepcoder/' target='_blank'>linkedin</a>
+            </li>
+            </ul>
         </footer>
       </div>
       </div>

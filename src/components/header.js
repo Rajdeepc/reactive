@@ -28,16 +28,20 @@ const Header = ({ siteTitle }) => (
         </Link>
 
       </h1>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <aside>
         <div
           style={{
             display: 'flex'
           }}>
           <img src='https://avatars1.githubusercontent.com/u/8790510?s=40&v=4' alt="Personal Website - Rajdeep" />
-          <p>
-            Personal Website by <a href="">Rajdeep Chandra</a><br/>
+          <p style={{
+            fontSize: '15px',
+            lineHeight: '20px',
+            marginLeft: '13px'
+          }}>
+            Personal Website by <a href="">Rajdeep Chandra</a><br />
             Follow my blogs,pends,fiddles nad Github Projects
           </p>
         </div>
