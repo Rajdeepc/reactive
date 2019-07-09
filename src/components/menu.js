@@ -5,10 +5,10 @@ const Menu = () => (
     <div style={{ background: 'lighgrey', paddingTop: '10px' }}>
         <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-evenly' }}>
             <li>
-                <Link to='/'>Blogs</Link>
+                <Link to='/'>Home</Link>
             </li>
             <li>
-                <Link to='/pens'>Pens</Link>
+                <Link to='/blog'>Blogs</Link>
             </li>
             <li>
                 <Link to='/fiddles'>Fiddles</Link>
