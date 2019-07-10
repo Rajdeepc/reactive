@@ -22,6 +22,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `#333`,
             textDecoration: `none`,
+            fontWeight: 900
           }}
         >
           {siteTitle}
@@ -42,7 +43,7 @@ const Header = ({ siteTitle }) => (
             marginLeft: '13px'
           }}>
             Personal Website by <a href="">Rajdeep Chandra</a><br />
-            Follow my blogs,pends,fiddles nad Github Projects
+            Follow my blogs, codepens, fiddles and github Projects
           </p>
         </div>
       </aside>

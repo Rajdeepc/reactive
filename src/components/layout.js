@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{marginTop:'4.375rem'}}>
           <ul style={{margin:0,padding:0}}>
           <li style={{display:'inline-block',marginLeft: '10px'}}>
           <a href='https://twitter.com/rajrock38' target='_blank'>twitter</a>

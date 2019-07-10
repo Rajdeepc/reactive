@@ -22,7 +22,6 @@ const FiddlesPage = () => {
   return (
     <Layout>
       <SEO title="Page two" />
-      <p>My Fiddles</p>
       { data.map((item) => {
         return <Card item={item}/>
       })}

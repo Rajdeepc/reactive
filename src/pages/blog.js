@@ -5,16 +5,15 @@ import Layout from "../components/layout"
 
 const BlogPage = ({ data }) => (
     <Layout>
-        <h1>Latest Posts</h1>
         {data.allMarkdownRemark.edges.map(post => (
-            <div key={post.node.id}>
-                <Link to={
+            <div key={post.node.id} style={{ paddingTop:'20px',paddingBottom:'20px',background: 'white', borderBottom:'1px solid rgba(0, 0, 0, 0.1)' }}>
+                <h3><Link 
+                style={{ fontWeight:900}}
+                to={
                     post.node.frontmatter.path
-                }><h3>{post.node.frontmatter.title}</h3></Link>
+                }>{post.node.frontmatter.title}</Link></h3>
                 <small>Posted By:{post.node.frontmatter.author} on {post.node.frontmatter.date}</small>
-                <br />
-                <br />
-                <hr />
+                
             </div>
         ))}
     </Layout>

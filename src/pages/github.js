@@ -2,7 +2,7 @@ import React, { useEffect,useState } from "react";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from '../components/card';
+import List from '../components/list';
 
 const FiddlesPage = () => {
 
@@ -22,9 +22,8 @@ const FiddlesPage = () => {
   return (
     <Layout>
       <SEO title="Page two" />
-      <p>My Github Repos</p>
       { data.map((item) => {
-        return <p>{item.name}</p>
+        return <List item={item}/>
       })}
       
     </Layout>

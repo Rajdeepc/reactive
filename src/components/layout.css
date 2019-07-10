@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 article,
 aside,
@@ -42,6 +43,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color:#663399;
+  text-decoration: none
 }
 a:active,
 a:hover {
@@ -619,4 +622,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.cardWrapper{
+  font-size: 15.8px;
+  background: white;
+    margin-bottom: 10px;
 }
