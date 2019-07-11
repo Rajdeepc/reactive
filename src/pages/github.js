@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import List from '../components/list';
 
-const FiddlesPage = () => {
+const GitHubPage = () => {
 
   const[data,setData] = useState([])
 
@@ -20,15 +20,14 @@ const FiddlesPage = () => {
   }, [])
 
   return (
-    <Layout>
-      <SEO title="Page two" />
+    <div>
       { data.map((item) => {
         return <List item={item}/>
       })}
-      
-    </Layout>
+      </div>
+   
   )
 
 }
 
-export default FiddlesPage
+export default GitHubPage

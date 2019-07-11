@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import Menu from '../components/menu';
+import TabsComponent from '../components/tabs';
 
 
 const Layout = ({ children }) => {
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         margin:'0 auto'
       }}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Menu/>
+      <TabsComponent/>
       <div
         style={{
           margin: `0 auto`,

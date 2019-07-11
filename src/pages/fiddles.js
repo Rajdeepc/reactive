@@ -20,13 +20,12 @@ const FiddlesPage = () => {
   }, [])
 
   return (
-    <Layout>
-      <SEO title="Page two" />
+    <div>
       { data.map((item) => {
         return <Card item={item}/>
       })}
       
-    </Layout>
+      </div>
   )
 
 }
