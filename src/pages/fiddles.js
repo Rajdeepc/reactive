@@ -3,6 +3,7 @@ import React, { useEffect,useState } from "react";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from '../components/card';
+import Loader from '../components/loader';
 
 const FiddlesPage = () => {
 
@@ -20,12 +21,17 @@ const FiddlesPage = () => {
   }, [])
 
   return (
-    <div>
-      { data.map((item) => {
-        return <Card item={item}/>
-      })}
+    <Layout>
+      { data.length > 0 ? data.map((item,i) => {
+        return (
+          <div>
+            <Card item={item}/>
+            { (data.length === i + 1) && <hr></hr>}
+        </div>
+        )
+      }): <Loader/>}
       
-      </div>
+      </Layout>
   )
 
 }

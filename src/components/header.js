@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import profileImg from '../images/download.png';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -36,7 +37,10 @@ const Header = ({ siteTitle }) => (
           style={{
             display: 'flex'
           }}>
-          <img src='https://avatars1.githubusercontent.com/u/8790510?s=40&v=4' alt="Personal Website - Rajdeep" />
+            <div className="imgContainer">
+              <img src={profileImg} alt="rajdeep" />
+            </div>
+          
           <p style={{
             fontSize: '15px',
             lineHeight: '20px',
