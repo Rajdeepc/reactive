@@ -1,11 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import CustomDate from '../components/customDate';
 
 import Layout from "../components/layout"
 
 const BlogPage = ({ data }) => (
     <Layout>
-        
+        <div className="text-right">{data.allMarkdownRemark.edges.length} blogs</div>
         {data.allMarkdownRemark.edges.map((post,i) => (
             <div>
             <div key={post.node.id} style={{ paddingTop:'20px',paddingBottom:'20px',background: 'white'}}>
@@ -14,7 +15,7 @@ const BlogPage = ({ data }) => (
                 to={
                     post.node.frontmatter.path
                 }>{post.node.frontmatter.title}</Link></h3>
-                <small>Posted By:{post.node.frontmatter.author} on {post.node.frontmatter.date}</small>
+                <small>Posted By:{post.node.frontmatter.author} on { CustomDate(post.node.frontmatter.date)}</small>
                 
             </div>
             { !(data.allMarkdownRemark.edges.length === i + 1) && <hr></hr> }

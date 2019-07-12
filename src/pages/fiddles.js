@@ -1,7 +1,6 @@
 import React, { useEffect,useState } from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
 import Card from '../components/card';
 import Loader from '../components/loader';
 
@@ -22,10 +21,11 @@ const FiddlesPage = () => {
 
   return (
     <Layout>
+      <div className="text-right">{data.length} fiddles</div>
       { data.length > 0 ? data.map((item,i) => {
         return (
           <div>
-            <Card item={item}/>
+            <Card item={item} key={item.id}/>
             { (data.length === i + 1) && <hr></hr>}
         </div>
         )

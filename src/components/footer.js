@@ -6,17 +6,17 @@ const Footer = () => {
       <div style={{ marginTop: "4.375rem" }}>
         <ul>
           <li className="list-group-item brdrbtm">
-            <a href="https://twitter.com/rajrock38" target="_blank">
+            <a href="https://twitter.com/rajrock38" rel="noopener noreferrer" target="_blank">
               twitter
             </a>
           </li>
           <li className="list-group-item brdrbtm">
-            <a href="http://github.com/Rajdeepc" target="_blank">
+            <a href="http://github.com/Rajdeepc" rel="noopener noreferrer" target="_blank">
               github
             </a>
           </li>
           <li className="list-group-item brdrbtm">
-            <a href="https://www.linkedin.com/in/rajdeepcoder/" target="_blank">
+            <a href="https://www.linkedin.com/in/rajdeepcoder/" rel="noopener noreferrer" target="_blank">
               linkedin
             </a>
           </li>

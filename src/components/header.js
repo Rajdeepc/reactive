@@ -46,7 +46,7 @@ const Header = ({ siteTitle }) => (
             lineHeight: '20px',
             marginLeft: '13px'
           }}>
-            Personal Website by <a href="">Rajdeep Chandra</a><br />
+            Personal Website by <a href="http://github.com/Rajdeepc">Rajdeep Chandra</a><br />
             Follow my blogs, codepens, fiddles and github Projects
           </p>
         </div>

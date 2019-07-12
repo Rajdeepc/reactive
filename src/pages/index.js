@@ -10,9 +10,9 @@ const IndexPage = () => (
   <Layout>
     <div className="mt20">
       <h3>
-        Engineering Team Lead specialising in MERN Stack Development Lifecycle,
-        Blockchain enthusiast.
+        Full Stack Engineering Team Lead - Accenture
       </h3>
+      <h4>Tech Blogger - <a href="https://thecoderswag.com" rel="noopener noreferrer">coderswag</a></h4>
       <h4>About Me : </h4>
       <p>
         I work as a MERN Stack Developer where I develop and implement solutions

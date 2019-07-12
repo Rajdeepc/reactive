@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
 import List from "../components/list"
 import Loader from "../components/loader"
 
@@ -20,6 +19,7 @@ const GitHubPage = () => {
 
   return (
     <Layout>
+      <div className="text-right">{data.length} projects</div>
       {data.length > 0 ? (
         data.map((item, i) => {
           return (
