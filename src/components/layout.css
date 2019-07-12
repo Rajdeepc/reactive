@@ -632,6 +632,7 @@ pre tt:after {
 .list-group-item{
   display: inline-block;
   margin-right: 30px;
+  margin-bottom: 0px;
 
 }
 .list-group{
@@ -640,6 +641,8 @@ pre tt:after {
 }
 .brdrbtm{
   border-bottom: 1px solid #ccc;
+  line-height: normal;
+  padding: 10px 0px;
 }
 .imgContainer{
   width: 50px;
@@ -653,4 +656,13 @@ pre tt:after {
 }
 .containerMain{
   padding: 0 1.3875rem 
+}
+.list-group-item a.active{
+  color:#000;
+  font-weight:700;
+  border-bottom:1px solid black;
+  padding:10px 0px
+}
+.list-group-item a{
+  font-size:14px;
 }

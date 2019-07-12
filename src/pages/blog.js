@@ -8,8 +8,8 @@ const BlogPage = ({ data }) => (
     <Layout>
         <div className="text-right">{data.allMarkdownRemark.edges.length} blogs</div>
         {data.allMarkdownRemark.edges.map((post,i) => (
-            <div>
-            <div key={post.node.id} style={{ paddingTop:'20px',paddingBottom:'20px',background: 'white'}}>
+            <div key={post.node.id} >
+            <div style={{ paddingTop:'20px',paddingBottom:'20px',background: 'white'}}>
                 <h3><Link 
                 style={{ fontWeight:900}}
                 to={
