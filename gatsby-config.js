@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `reactive`,
-    description: ``,
+    description: `Personal Blog by Rajdeep`,
     author: `@Rajdeepc`,
   },
   plugins: [
@@ -13,6 +13,12 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/pages`,
       },
+    },
+    {
+      resolve:`gatsby-plugin-mailchimp`,
+      options: {
+        endpoint: 'https://gmail.us3.list-manage.com/subscribe/post?u=e9157370501ddbd36fe488a20&amp;id=08f72a419f'
+    },
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,

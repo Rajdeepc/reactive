@@ -666,3 +666,40 @@ pre tt:after {
 .list-group-item a{
   font-size:14px;
 }
+
+.form-kit{
+  box-shadow: 0 2px 15px 0 rgba(210,214,220,.5);
+  max-width: 700px;
+  overflow: hidden;
+}
+.column{
+  padding: 40px;
+}
+.full{
+  display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.form-field{
+  margin: 0 0 15px;
+}
+.submit-button{
+  background-color: hsl(340, 63%, 55%);
+  border-radius: 24px;
+  color: white;
+  font-weight: 700;
+  width:auto;
+  transition: all .3s ease-in-out;
+  padding: 12px 24px;
+}
+.formkit-input {
+  background: #fff;
+  font-size: 15px;
+  padding: 12px;
+  border: 1px solid #e3e3e3;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  margin: 0;
+  width:100%;
+  transition: border-color .3s ease-out;
+
+}
