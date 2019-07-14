@@ -15,7 +15,7 @@ const BlogPage = ({ data }) => (
                 to={
                     post.node.frontmatter.path
                 }>{post.node.frontmatter.title}</Link></h3>
-                <small>Posted By:{post.node.frontmatter.author} on { CustomDate(post.node.frontmatter.date)}</small>
+                <small>{ CustomDate(post.node.frontmatter.date)}</small>
                 
             </div>
             { !(data.allMarkdownRemark.edges.length === i + 1) && <hr></hr> }
