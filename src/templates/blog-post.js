@@ -4,10 +4,11 @@ import { graphql } from "gatsby"
 import Header from "../components/header"
 import './blogpost.css';
 import ContactCard from '../components/contactCard';
-
+import { calTimeRead } from '../components/timeToRead';
 
 export default function Template({ data }) {
   const post = data.markdownRemark
+
 
   return (
     <div
@@ -18,17 +19,19 @@ export default function Template({ data }) {
         paddingTop: 0,
       }}
     >
-     
-
       <div className="mt20 paddingLeftRight">
         <Link to="/blog"> Go Back</Link>
         <div className="mt20">
           <h3>{post.frontmatter.title}</h3>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
+        <div>
+          <i className="fa fa-coffee" aria-hidden="true">
+          </i>&nbsp;
+          {calTimeRead(post.html)}</div>
       </div>
 
-        <ContactCard/>
+      <ContactCard />
 
       <Header siteTitle="reactive" />
     </div>
@@ -42,8 +45,8 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
-        author
         date
+        
       }
     }
   }

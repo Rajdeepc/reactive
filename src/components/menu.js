@@ -11,9 +11,9 @@ const MenuComponent = () => (
       <li className="list-group-item">
         <Link to='/blog' activeClassName="active">My Blogs</Link>
       </li>
-      <li className="list-group-item">
+      {/* <li className="list-group-item">
         <Link to='/fiddles' activeClassName="active">My Fiddles</Link>
-      </li>
+      </li> */}
       <li className="list-group-item">
         <Link to='/github' activeClassName="active">GitHub Projects</Link>
       </li>

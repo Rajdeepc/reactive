@@ -47,8 +47,8 @@ const Header = ({ siteTitle }) => (
             marginLeft: '13px',
             paddingTop: '6px'
           }}>
-            Personal Website by <a href="http://github.com/Rajdeepc">Rajdeep Chandra</a><br />
-            Follow my blogs, codepens, fiddles and github Projects
+            
+            Personal Blog by <a target="__blank" href="https://www.linkedin.com/in/rajdeepcoder/">Rajdeep Chandra</a><br></br>I write on  JavaScript.everything()
           </p>
         </div>
       </aside>
