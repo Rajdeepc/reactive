@@ -24,7 +24,6 @@ export default function Template({ data }) {
         <Link to="/blog"> Go Back</Link>
         <div className="mt20">
           <h3>{post.frontmatter.title}</h3>
-          <h4>Posted By: {post.frontmatter.author}</h4>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
@@ -44,7 +43,6 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
-        author
         date
       }
     }
