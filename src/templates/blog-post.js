@@ -14,7 +14,7 @@ export default function Template({ data }) {
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: '42rem',
         padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
       }}
@@ -25,6 +25,7 @@ export default function Template({ data }) {
           <h3>{post.frontmatter.title}</h3>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
+        <br/>
         <div>
           <i className="fa fa-coffee" aria-hidden="true">
           </i>&nbsp;
