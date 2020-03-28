@@ -9,8 +9,8 @@ const List = (props) => (
             <div style={{ overflow: 'auto' }}>
                 <span style={{ fontSize: '18.96px', color: 'rgba(0,0,0,0.8)', marginBottom: 0, float: 'left' }}>
                     Language: {props.item.language}</span>
-                <span style={{ float: 'right' }}><i className="fa fa-star" aria-hidden="true"></i>&nbsp;
-                    {props.item.stargazers_count} &nbsp;&nbsp;&nbsp;<i className="fa fa-code-fork" aria-hidden="true"></i>&nbsp;
+                <span style={{ float: 'right' }}>Stars &nbsp;
+                    {props.item.stargazers_count} Forks &nbsp;
                     {props.item.forks_count}</span>
             </div>
             <small style={{ color: 'rgba(0, 0, 0, 0.54)' }}>

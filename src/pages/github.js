@@ -19,7 +19,7 @@ const GitHubPage = () => {
 
   return (
     <Layout>
-      <div className="text-right">{data.length} projects</div>
+        <div style={{ paddingTop:'10px',paddingBottom:'10px',textAlign: 'right',fontWeight:'bold'}}>{data.length} Projects</div>
       {data.length > 0 ? (
         data.map((item, i) => {
           return (
