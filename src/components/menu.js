@@ -6,9 +6,6 @@ const MenuComponent = () => (
   <div style={{ paddingTop: '10px' }}>
     <ul className="list-group brdrbtm">
       <li className="list-group-item">
-        <Link to='/' activeClassName="active">About Me</Link>
-      </li>
-      <li className="list-group-item">
         <Link to='/blog' activeClassName="active">My Blogs</Link>
       </li>
       {/* <li className="list-group-item">
