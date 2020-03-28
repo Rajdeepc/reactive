@@ -4,7 +4,7 @@ import CustomDate from '../components/customDate';
 import Layout from "../components/layout"
 import { calTimeRead } from '../components/timeToRead';
 
-const BlogPage = ({ data }) => (
+const IndexPage = ({ data }) => (
     <Layout>
         <div style={{ paddingTop:'10px',paddingBottom:'10px',textAlign: 'right',fontWeight:'bold'}}>{data.allMarkdownRemark.edges.length} blogs</div>
         {data.allMarkdownRemark.edges.map((post,i) => (
@@ -46,6 +46,6 @@ export const pageQuery = graphql`
 `
 
 
-export default BlogPage
+export default IndexPage
 
 

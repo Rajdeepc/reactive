@@ -4,7 +4,7 @@
 // import Layout from "../components/layout"
 // import { calTimeRead } from '../components/timeToRead';
 
-// const BlogPage = ({ data }) => (
+// const IndexPage = ({ data }) => (
 //     <Layout>
 //         <div className="text-right">{data.allMarkdownRemark.edges.length} blogs</div>
 //         {data.allMarkdownRemark.edges.map((post,i) => (
@@ -46,6 +46,6 @@
 // `
 
 
-// export default BlogPage
+// export default IndexPage
 
 
