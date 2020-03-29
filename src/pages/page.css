@@ -9,3 +9,7 @@
 .text-right{
     text-align: right
 }
+.card{
+    margin-bottom: 20px;;
+    min-height: 400px;
+}

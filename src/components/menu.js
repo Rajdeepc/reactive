@@ -4,17 +4,17 @@ import './layout.css';
 
 const MenuComponent = () => (
   <div style={{ paddingTop: '10px' }}>
-    <ul className="list-group brdrbtm">
-      <li className="list-group-item">
-        <Link to='/' isCurrent activeClassName="active">My Blogs</Link>
+    <ul class="nav nav-tabs">
+      <li className="nav-item">
+        <Link to='/' isCurrent className="nav-link" activeClassName="active">My Blogs</Link>
       </li>
       {/* <li className="list-group-item">
         <Link to='/fiddles' activeClassName="active">My Fiddles</Link>
       </li> */}
-      <li className="list-group-item">
-        <Link to='/github' activeClassName="active">GitHub Projects</Link>
+      <li className="nav-item">
+        <Link to='/github' className="nav-link " activeClassName="active">GitHub Projects</Link>
       </li>
-    </ul>
+  </ul>
   </div>
 )
 

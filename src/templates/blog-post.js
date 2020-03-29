@@ -11,13 +11,7 @@ export default function Template({ data }) {
 
 
   return (
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: '42rem',
-        padding: `0px 1.0875rem 1.45rem`,
-        paddingTop: 0,
-      }}
+    <div className="container"
     >
       <div className="mt20 paddingLeftRight">
         <Link to="/"> Go Back</Link>
