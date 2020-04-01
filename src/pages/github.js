@@ -28,7 +28,7 @@ const GitHubPage = () => {
         data.map((item, i) => {
           return (
             <div className="col-md-4">
-              <div className="card">
+              <div className="card-box">
               <List key={item.id} item={item} />
               </div>
             </div>

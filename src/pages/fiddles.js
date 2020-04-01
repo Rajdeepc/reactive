@@ -25,7 +25,7 @@ const FiddlesPage = () => {
       { data.length > 0 ? data.map((item,i) => {
         return (
           <div>
-            <Card item={item} key={item.id}/>
+            <div item={item} key={item.id}/>
             { (data.length === i + 1) && <hr></hr>}
         </div>
         )

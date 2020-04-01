@@ -1,15 +1,105 @@
-.mt20{
-    margin-top:20px;
+.mt20 {
+    margin-top: 20px;
 }
-.download{
+
+.download {
     background: #663399;
-    color:#fff;
-    padding:10px 20px
+    color: #fff;
+    padding: 10px 20px
 }
-.text-right{
+
+.text-right {
     text-align: right
 }
-.card{
-    margin-bottom: 20px;;
+
+.card {
+    margin-bottom: 20px;
+    ;
     min-height: 400px;
+}
+
+.card-box {
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    padding: 16px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.card-box-outline a {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-info ul {
+    list-style-type: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.card-info ul li {
+    float: left;
+    margin-left: 10px;
+    margin:0;
+}
+header{
+    width: 100%;
+    padding-bottom: 0;
+    color: #666;
+    background-color: #fafbfc;
+}
+.header-container{
+    padding-top: 16px;
+}
+.card-box-desc {
+    font-size: 12px;
+    margin-top: 16px;
+    flex: 1 0 auto;
+}
+ul.nav.justify-content-end {
+    margin: 0;
+}
+ul.nav.justify-content-end .nav-link{
+    padding-left: 0;
+}
+.menu-contianer{
+    background-color: #fafbfc;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.nav-tabs{
+    border: 0px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #e36209 #e1e4e8 transparent;
+    border-top: 3px solid #e36209;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.card-info {
+    font-size: 14px;
+}
+.card-box-desc p {
+    max-height: 38px;
+    overflow: hidden;
+    display: block;
+    height: auto;
+    min-height: 38px;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.card-box-outline {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
