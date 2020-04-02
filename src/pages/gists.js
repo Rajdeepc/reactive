@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react"
-
 import Layout from "../components/layout"
 import List from "../components/list"
 import Loader from "../components/loader"
 import "./page.css"
 
-const GitHubPage = () => {
+const GistsPage = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch("https://api.github.com/users/Rajdeepc/repos")
+    fetch("https://api.github.com/users/Rajdeepc/gists")
       .then(response => {
         return response.json()
       })
       .then(data => {
+        console.log(data)
         setData(data)
       })
   }, [])
@@ -21,22 +21,24 @@ const GitHubPage = () => {
   return (
     <Layout>
       <div className="row">
+      <ul class="list-group">
+
         {data.length > 0 ? (
           data.map((item, i) => {
             return (
-              <div className="col-md-4">
-                <div className="card-box">
-                  <List key={item.id} item={item} />
-                </div>
-              </div>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a target="_blank" href={item.git_pull_url}>{item.description}</a>
+                    <span class="badge badge-primary badge-pill">{item.comments}</span>
+                </li>
             )
           })
         ) : (
           <Loader />
         )}
+        </ul>
       </div>
     </Layout>
   )
 }
 
-export default GitHubPage
+export default GistsPage

@@ -1,0 +1,25 @@
+{
+    "vscodeplugins":[
+        {
+            "id":1,
+            "name":"React Native Base Snippets",
+            "desc" :"",
+            "img":"https://rajdeepchandra.gallerycdn.vsassets.io/extensions/rajdeepchandra/reactnativesnippets/1.1.2/1565633048424/Microsoft.VisualStudio.Services.Icons.Default",
+            "installs":592,
+            "license":"Free",
+            "author":"RajdeepChandra",
+            "url":"https://marketplace.visualstudio.com/items?itemName=RajdeepChandra.react-native-elements-snippets"
+        },
+        {
+            "id":2,
+            "name":"React-Native-Elements-Snippets",
+            "desc" :"",
+            "img":"https://rajdeepchandra.gallerycdn.vsassets.io/extensions/rajdeepchandra/react-native-elements-snippets/1.0.1/1565717545105/Microsoft.VisualStudio.Services.Icons.Default",
+            "installs":697,
+            "license":"Free",
+            "author":"RajdeepChandra",
+            "url":"https://marketplace.visualstudio.com/items?itemName=RajdeepChandra.reactnativesnippets"
+        }
+
+    ]
+}

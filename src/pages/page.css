@@ -14,8 +14,13 @@
 
 .card {
     margin-bottom: 20px;
-    ;
-    min-height: 400px;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+}
+.card:hover{
+    text-decoration: none;
+    color:#000
 }
 
 .card-box {
@@ -143,5 +148,69 @@ ul.nav.justify-content-end .nav-link{
     background-color: #00ADD8
 }
 .vue{
-    background-color: #f1e05a
+    background-color: #327e36
+}
+.python{
+    background-color: #663399
+}
+.image-wrapper{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+.author-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6px;
+    color: #767676;
+}
+.license-text{
+    justify-content: flex-end;
+    display: flex;
+    color: #327e36;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.author-text{
+    justify-content: flex-start;
+    display: flex;
+}
+.installs-text{
+    justify-content: flex-end;
+    display: flex;
+}
+.page-wrapper{
+    padding: 40px 0px;
+}
+p.perosnal-info {
+    font-size: 14px;
+    padding-left: 20px;
+}
+.perosnal-info h3,.perosnal-info p {
+    margin-bottom: 8px;
+}
+.perosnal-info li.nav-item {
+    margin-right: 24px;
+}
+.perosnal-info li.nav-item a{
+    color:#7d7d7d
+}
+
+.list-group {
+    flex-direction: column;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.list-group-item+.list-group-item
+{
+    border-top-width: 1px;
+}
+.list-group-item  a{
+    color: #000;
+}
+.list-group-item  a:hover{
+   text-decoration: none;
 }

@@ -13,7 +13,7 @@ import Header from "./header"
 import "./layout.css"
 import MenuComponent from "../components/menu"
 import Footer from "../components/footer"
-import Navbar from './navbar'
+import Navbar from "./navbar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,16 +28,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    {/* <Navbar siteTitle={data.site.siteMetadata.title}/> */}
       <div className="container-fluid">
-        
         <div className="row">
-          <Header  />
+          <Header />
         </div>
 
         <MenuComponent />
         <div className="row">
-          <div className="container">{children}</div>
+          <div className="container">
+            <div className="page-wrapper">
+            {children}
+            </div>
+            
+          </div>
         </div>
         <div className="row">
           {" "}

@@ -3,18 +3,22 @@ import CustomDate from "../components/customDate"
 import { GoRepoForked, GoStar, GoRepo } from "react-icons/go"
 
 const List = props => {
-
-  const selectiveClassName = (language) => {
-    switch(language){
-      case 'JavaScript':
-        return 'javaScript';
-      case 'TypeScript':
-        return 'typeScript';
-      case 'HTML':
-        return 'html'
+  const selectiveClassName = language => {
+    switch (language) {
+      case "JavaScript":
+        return "javaScript"
+      case "TypeScript":
+        return "typeScript"
+      case "HTML":
+        return "html"
+      case "Python":
+        return "python"
+      case "CSS":
+        return "css"
+      case "Vue":
+        return "vue"
       default:
-        break;
-
+        break
     }
   }
   return (
@@ -39,8 +43,10 @@ const List = props => {
           <ul>
             <li>
               <span class="d-inline-block mr-3">
-              <span
-                  className={`repo-language-color ${selectiveClassName(props.item.language)}`}
+                <span
+                  className={`repo-language-color ${selectiveClassName(
+                    props.item.language
+                  )}`}
                 ></span>
                 <span itemprop="programmingLanguage">
                   {props.item.language}
@@ -49,7 +55,6 @@ const List = props => {
             </li>
             <li>
               <span className="d-inline-block mr-3">
-                
                 <span>
                   <GoStar />{" "}
                 </span>
