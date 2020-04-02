@@ -54,6 +54,7 @@ header{
 }
 .header-container{
     padding-top: 16px;
+    padding-bottom: 16px;
 }
 .card-box-desc {
     font-size: 12px;
@@ -90,16 +91,57 @@ ul.nav.justify-content-end .nav-link{
 }
 .card-box-desc p {
     max-height: 38px;
-    overflow: hidden;
-    display: block;
     height: auto;
     min-height: 38px;
-    text-overflow: ellipsis;
     white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card-box-outline {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.footer{
+    width:100%
+}
+.footer {
+    color: #fafafa;
+    font-size: 14px;
+}
+.footer .text-center {
+    text-align: center!important;
+    padding: 12px 0px;
+    line-height: 24px;
+}
+.repo-language-color {
+    position: relative;
+    top: 1px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.typeScript{
+    background-color: #3572A5
+}
+.javaScript{
+    background-color: #f1e05a
+}
+.html{
+    background-color:#ffac45
+}
+.css{
+    background-color: #b07219
+}
+.react{
+    background-color: #00ADD8
+}
+.vue{
+    background-color: #f1e05a
 }
