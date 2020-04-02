@@ -1,0 +1,32 @@
+.dark-theme {
+    width: 100%;
+    color: #fff;
+    background-color: #24292e;
+
+    .header-wrapper {
+        width: 100%;
+    }
+
+    .card {
+        background-color: #24292e;
+        border-color: #fff;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .card-box {
+        background-color: #24292e;
+
+        .card-box-outline {
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .menu-contianer {
+        background-color: #24292e;
+    }
+}

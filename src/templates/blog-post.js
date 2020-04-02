@@ -14,7 +14,7 @@ export default function Template({ data }) {
     <div className="container"
     >
       <div className="mt20 paddingLeftRight">
-        <Link to="/"> Go Back</Link>
+        <Link to="/blog"> Go Back</Link>
         <div className="mt20">
           <h3>{post.frontmatter.title}</h3>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />

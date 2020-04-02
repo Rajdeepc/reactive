@@ -8,8 +8,9 @@ const BlogPage = ({ data }) => (
     <Layout>
         {data.allMarkdownRemark.edges.map((post,i) => (
             <div key={post.node.id} >
-            <div style={{ paddingTop:'20px',paddingBottom:'20px',background: 'white'}}>
-                <h3 style={{marginBottom:10}}><Link 
+            <div className="blog-post-card">
+                <h3 style={{marginBottom:10}}>
+                    <Link 
                 style={{ fontWeight:900}}
                 to={
                     post.node.frontmatter.path
@@ -17,7 +18,6 @@ const BlogPage = ({ data }) => (
                 <small>{ CustomDate(post.node.frontmatter.date)} &nbsp;&nbsp; <i className="fa fa-coffee" aria-hidden="true"/> {calTimeRead(post.node.html)}</small>
                 
             </div>
-            { !(data.allMarkdownRemark.edges.length === i + 1) && <hr></hr> }
             </div>
         ))}
     </Layout>
