@@ -21,16 +21,27 @@ import "./slider.css";
 
 const Layout = ({ children }) => {
 
+
+
+  const [darkTheme, setDarkTheme] = useState(undefined);
+  
+
   const getLocalThemeFromStorage = () => {
-    const themeSelected = JSON.parse(localStorage.getItem("dark"))
+    const themeSelected = JSON.parse(localStorage.getItem("dark"));
+    if(themeSelected){
+      document.querySelector('#checkbox').checked = true
+    }
     return themeSelected || false
   }
 
-  const [darkTheme, setDarkTheme] = useState(getLocalThemeFromStorage())
-
+  useEffect(() => {
+    setDarkTheme(getLocalThemeFromStorage())
+  }, [])
 
   useEffect(() => {
-    localStorage.setItem("dark", JSON.stringify(darkTheme))
+    if(darkTheme !== undefined){
+      localStorage.setItem("dark", JSON.stringify(darkTheme))
+    }
   }, [darkTheme])
 
   const data = useStaticQuery(graphql`
@@ -55,8 +66,8 @@ const Layout = ({ children }) => {
             </div>
             <div className="col-md-2">
               <div class="theme-switch-wrapper">
-                <em>
-                  <FiMoon />
+              <em>
+                  <FiSun />
                 </em>
                 <label class="theme-switch" for="checkbox">
                   <input
@@ -66,8 +77,9 @@ const Layout = ({ children }) => {
                   />
                   <div class="slider round"></div>
                 </label>
+               
                 <em>
-                  <FiSun />
+                  <FiMoon />
                 </em>
               </div>
             </div>

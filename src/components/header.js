@@ -32,7 +32,7 @@ const Header = () => {
                           I write on JavaScript.everything()
                         </p>
                         <div>
-                          <ul className="nav justify-content-end">
+                          <ul className="nav">
                             <li className="nav-item">
                               <span>
                                 <GoLocation />

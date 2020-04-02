@@ -194,6 +194,9 @@ p.perosnal-info {
 .perosnal-info h3,.perosnal-info p {
     margin-bottom: 8px;
 }
+.perosnal-info ul.nav{
+    margin-left: 0px;
+}
 .perosnal-info li.nav-item {
     margin-right: 24px;
 }
