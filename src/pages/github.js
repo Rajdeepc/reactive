@@ -9,7 +9,7 @@ const GitHubPage = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch("https://api.github.com/users/Rajdeepc/repos")
+    fetch("https://api.github.com/users/Rajdeepc/repos?type=owner&sort=created")
       .then(response => {
         return response.json()
       })
