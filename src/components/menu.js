@@ -36,16 +36,6 @@ const MenuComponent = () => (
           </li>
           <li className="nav-item">
             <Link
-              to="/gists"
-              isCurrent
-              className="nav-link"
-              activeClassName="active"
-            >
-              <GoGistSecret/> Gists
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
               to="/experiments"
               isCurrent
               className="nav-link"

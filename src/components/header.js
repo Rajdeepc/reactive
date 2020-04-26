@@ -42,7 +42,6 @@ const Header = () => {
                             <li className="nav-item">
                               <a
                                 href="https://twitter.com/rajrock38"
-                                rel="noopener noreferrer"
                                 target="_blank"
                               >
                                 <FaTwitter /> Twitter
@@ -51,7 +50,6 @@ const Header = () => {
                             <li className="nav-item">
                               <a
                                 href="http://github.com/Rajdeepc"
-                                rel="noopener noreferrer"
                                 target="_blank"
                               >
                                 <FaGithub /> Github
@@ -60,7 +58,6 @@ const Header = () => {
                             <li className="nav-item">
                               <a
                                 href="https://www.linkedin.com/in/rajdeepcoder/"
-                                rel="noopener noreferrer"
                                 target="_blank"
                               >
                                 <FaLinkedin /> Linkedin

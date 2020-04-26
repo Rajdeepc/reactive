@@ -25,7 +25,7 @@ const List = props => {
     <>
       <div className="card-box-outline">
         <GoRepo />{" "}
-        <a target="_blank" rel="noopener noreferrer" href={props.item.html_url}>
+        <a target="_blank" href={props.item.html_url}>
           {props.item.name}
         </a>
       </div>
