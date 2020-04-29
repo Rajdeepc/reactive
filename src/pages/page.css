@@ -77,8 +77,10 @@ ul.nav.justify-content-end .nav-link{
     border-bottom: 1px solid #eee;
 }
 .blog-post-card {
-    padding: 18px 0px;
-    border-bottom: 1px solid #7d7d7d;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0px;
+    border-bottom: 1px solid  rgba(0,0,0,.125);
 }
 .nav-tabs{
     border: 0px;
@@ -113,6 +115,10 @@ ul.nav.justify-content-end .nav-link{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.card-box-outline img{
+    vertical-align: text-top;
+    margin-right: 8px;
 }
 .footer{
     width:100%
@@ -203,7 +209,9 @@ p.perosnal-info {
 .perosnal-info li.nav-item a{
     color:#7d7d7d
 }
-
+.nav-tabs .nav-item img {
+    width:24px
+}
 .list-group {
     flex-direction: column;
     padding-left: 0;
@@ -220,4 +228,8 @@ p.perosnal-info {
 }
 .list-group-item  a:hover{
    text-decoration: none;
+}
+.blog-post-card img {
+    vertical-align: text-top;
+    margin-right: 10px;
 }

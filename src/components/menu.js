@@ -3,6 +3,11 @@ import Link from "gatsby-link"
 import "./layout.css"
 import {  GoGistSecret,GoRepo } from "react-icons/go"
 import { FaCodepen, FaBlog ,FaPlug,FaHiking} from "react-icons/fa"
+import {blogs,
+  github,
+  plugin,
+  work} from '../images/images';
+
 
 const MenuComponent = () => (
   <div className="row">
@@ -11,7 +16,7 @@ const MenuComponent = () => (
         <ul class="nav nav-tabs">
           <li className="nav-item">
             <Link to="/" className="nav-link " activeClassName="active">
-              <GoRepo /> GitHub Projects
+            <img src={github} alt=""/> GitHub Projects
             </Link>
           </li>
           <li className="nav-item">
@@ -21,7 +26,7 @@ const MenuComponent = () => (
               className="nav-link"
               activeClassName="active"
             >
-              <FaBlog/> Blogs
+              <img src={blogs} alt=""/> Blogs
             </Link>
           </li>
           <li className="nav-item">
@@ -31,7 +36,7 @@ const MenuComponent = () => (
               className="nav-link"
               activeClassName="active"
             >
-              <FaPlug/> VS Code Plugins
+              <img src={plugin} alt=""/> VS Code Plugins
             </Link>
           </li>
           <li className="nav-item">
@@ -41,7 +46,7 @@ const MenuComponent = () => (
               className="nav-link"
               activeClassName="active"
             >
-               <FaCodepen/> Experiments
+               <img src={work} alt=""/> Experiments
             </Link>
           </li>
         </ul>

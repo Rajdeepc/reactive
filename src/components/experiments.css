@@ -5,6 +5,10 @@
     border: 1px solid #7d7d7d;
     margin-bottom: 20px;
     border-radius: 3px;
+    flex-direction: column;
+}
+.title-container {
+    height: 52px;
 }
 .src-link h5 {
     font-size: 20px;
@@ -15,13 +19,14 @@
 .author-cotnainer {
     font-size: 12px;
     color: #7d7d7d;
+    height: 58px;
 }
 .view-btn-row{
     flex-direction: row;
     justify-content: flex-end;
 }
 .view-btn {
-    background: #663399;
+    background: transparent;
     border-radius: 32px;
     padding: 5px;
     width: 94px;
@@ -29,11 +34,14 @@
     font-size: 12px;
     margin-top: 10px;
     margin-left: auto;
+    color: #663399;
+    border-color: #663399;
+    border: 1px solid;
    
 }
 .view-btn a{
     
-    color:#fafafa;
+    color:#663399;
     font-weight: bold;
     font-size: 14px;
 }

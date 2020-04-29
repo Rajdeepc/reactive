@@ -1,7 +1,10 @@
 import React from "react"
 import CustomDate from "../components/customDate"
 import { GoRepoForked, GoStar, GoRepo } from "react-icons/go"
-
+import {blogs,
+  github,
+  plugin,
+  work} from '../images/images';
 const List = props => {
   const selectiveClassName = language => {
     switch (language) {
@@ -24,7 +27,7 @@ const List = props => {
   return (
     <>
       <div className="card-box-outline">
-        <GoRepo />{" "}
+        <img src={github} alt="github"/>
         <a target="_blank" href={props.item.html_url}>
           {props.item.name}
         </a>
