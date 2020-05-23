@@ -119,6 +119,7 @@ ul.nav.justify-content-end .nav-link{
 .card-box-outline img{
     vertical-align: text-top;
     margin-right: 8px;
+    margin-bottom: 0px;
 }
 .footer{
     width:100%
