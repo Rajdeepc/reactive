@@ -6,9 +6,6 @@ import { GoLocation } from "react-icons/go"
 
 const Header = () => {
 
-
-
-
   return (
       <header>
         <div className="container">

@@ -124,13 +124,25 @@ ul.nav.justify-content-end .nav-link{
 .footer{
     width:100%
 }
+.footer .nav{
+    justify-content: center;
+}
+.footer .nav .nav-item a{
+   color: #fff;
+   text-decoration: none;
+}
+.footer .nav .nav-item{
+    margin-left: 20px;
+    margin-bottom: 0px;
+ }
 .footer {
     color: #fafafa;
     font-size: 14px;
 }
 .footer .text-center {
-    text-align: center!important;
-    padding: 12px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
     line-height: 24px;
 }
 .repo-language-color {
